@@ -31,13 +31,10 @@ body{
     text-align: center;
 }
 
-
-
-
 .btn{
     border: none;
     width: 260px;
-    height: 290px;
+    height: 310px;
     background-color: #F8F7F5;
     border-radius:5px;
 }
@@ -48,3 +45,34 @@ body{
     border-radius:5px;
     margin-top: -.2rem;
 }
+
+#single-meal-container{
+    margin-left: 25%;
+    margin-top: 2rem;
+}
+
+.single-image{
+    width: 588px;
+    height: 322px;
+    border-radius: 5px;;
+}
+
+#error-message{
+    text-align: center;
+    color: red;
+}
+
+@media only screen and  (max-width: 768px) {
+    #meals-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        text-align: center;
+    }}
+
+@media only screen and  (max-width: 400px) {
+    #meals-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1em;
+        text-align: center;
+    }}
+    
